@@ -1,0 +1,10 @@
+C:\A\src\GIT\CorsoXamarin\CorsoXamarinMaggio2015\Modulo1\PrimoModulo\PrimoModulo\bin\Debug\PrimoModulo.dll
+C:\A\src\GIT\CorsoXamarin\CorsoXamarinMaggio2015\Modulo1\PrimoModulo\PrimoModulo\bin\Debug\PrimoModulo.pdb
+C:\A\src\GIT\CorsoXamarin\CorsoXamarinMaggio2015\Modulo1\PrimoModulo\PrimoModulo\bin\Debug\Xamarin.Forms.Core.dll
+C:\A\src\GIT\CorsoXamarin\CorsoXamarinMaggio2015\Modulo1\PrimoModulo\PrimoModulo\bin\Debug\Xamarin.Forms.Platform.dll
+C:\A\src\GIT\CorsoXamarin\CorsoXamarinMaggio2015\Modulo1\PrimoModulo\PrimoModulo\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\A\src\GIT\CorsoXamarin\CorsoXamarinMaggio2015\Modulo1\PrimoModulo\PrimoModulo\bin\Debug\Xamarin.Forms.Core.xml
+C:\A\src\GIT\CorsoXamarin\CorsoXamarinMaggio2015\Modulo1\PrimoModulo\PrimoModulo\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\A\src\GIT\CorsoXamarin\CorsoXamarinMaggio2015\Modulo1\PrimoModulo\PrimoModulo\obj\Debug\LoginPage.xaml.g.cs
+C:\A\src\GIT\CorsoXamarin\CorsoXamarinMaggio2015\Modulo1\PrimoModulo\PrimoModulo\obj\Debug\PrimoModulo.dll
+C:\A\src\GIT\CorsoXamarin\CorsoXamarinMaggio2015\Modulo1\PrimoModulo\PrimoModulo\obj\Debug\PrimoModulo.pdb

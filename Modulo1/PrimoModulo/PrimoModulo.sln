@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimoModulo", "PrimoModulo\PrimoModulo.csproj", "{810F43F1-FA2D-4C98-A16D-7A017F8A8353}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimoModulo.Droid", "Droid\PrimoModulo.Droid.csproj", "{1BA3B08D-A9EC-4BCF-B02B-1607496E898A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BA3B08D-A9EC-4BCF-B02B-1607496E898A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BA3B08D-A9EC-4BCF-B02B-1607496E898A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BA3B08D-A9EC-4BCF-B02B-1607496E898A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BA3B08D-A9EC-4BCF-B02B-1607496E898A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{810F43F1-FA2D-4C98-A16D-7A017F8A8353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810F43F1-FA2D-4C98-A16D-7A017F8A8353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810F43F1-FA2D-4C98-A16D-7A017F8A8353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810F43F1-FA2D-4C98-A16D-7A017F8A8353}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
