@@ -23,6 +23,9 @@ namespace CorsoXamarin
 			if (!_loginpage.SeLoggato) {
 				Navigation.PushModalAsync (_loginpage);
 			}
+
+			// il presented espande il menu laterale
+			IsPresented = true;
 		}
 	}
 }

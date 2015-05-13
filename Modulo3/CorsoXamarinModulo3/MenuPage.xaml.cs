@@ -13,7 +13,7 @@ namespace CorsoXamarin
 		public MenuPage ()
 		{
 			InitializeComponent ();
-			BackgroundColor = Color.Aqua;
+			// BackgroundColor = Color.Aqua;
 
 			this.Title = "Menu";
 

@@ -2,8 +2,24 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CorsoXamarin.MenuPage">
 	<ContentPage.Content>
 
-	<ListView x:Name="ListaVociMenu">
-	</ListView>
+	<Grid Padding="0,30,0,0">
+	 <Grid.RowDefinitions>
+		 <RowDefinition Height="50" />
+		 <RowDefinition Height="3*" />
+	 </Grid.RowDefinitions>
+
+	 <Grid.ColumnDefinitions>
+	 </Grid.ColumnDefinitions>
+
+	 	 
+	 	
+	 	<Image Source="Unknown.jpeg" Grid.Row="0"></Image>
+
+
+		<ListView Grid.Row="1" x:Name="ListaVociMenu">
+		</ListView>
+
+	</Grid>
 
 	</ContentPage.Content>
 </ContentPage>
