@@ -26,6 +26,10 @@ namespace CorsoXamarinModulo.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Lotz.Xam.Messaging.Resource.String.ApplicationName = global::CorsoXamarinModulo.Droid.Resource.String.ApplicationName;
+			global::Lotz.Xam.Messaging.Resource.String.Hello = global::CorsoXamarinModulo.Droid.Resource.String.Hello;
+			global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::CorsoXamarinModulo.Droid.Resource.String.ApplicationName;
+			global::Xamarin.Forms.Platform.Resource.String.Hello = global::CorsoXamarinModulo.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
@@ -56,6 +60,25 @@ namespace CorsoXamarinModulo.Droid
 			}
 			
 			private Drawable()
+			{
+			}
+		}
+		
+		public partial class String
+		{
+			
+			// aapt resource value: 0x7f030001
+			public const int ApplicationName = 2130903041;
+			
+			// aapt resource value: 0x7f030000
+			public const int Hello = 2130903040;
+			
+			static String()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private String()
 			{
 			}
 		}

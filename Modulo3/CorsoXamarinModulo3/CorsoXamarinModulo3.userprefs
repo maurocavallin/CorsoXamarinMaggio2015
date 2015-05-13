@@ -1,14 +1,14 @@
 ﻿<Properties StartupItem="Droid\CorsoXamarinModulo.Droid.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyPage.xaml.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.4.4.2-API19-GooglePlayX86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CorsoXamarin.cs">
     <Files>
-      <File FileName="DetailPage.xaml.cs" Line="12" Column="4" />
-      <File FileName="MyPage.xaml" Line="1" Column="1" />
-      <File FileName="MyPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="CorsoXamarin.cs" Line="47" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\A\src\GIT\CorsoXamarin\CorsoXamarinMaggio2015\Modulo3\CorsoXamarinModulo3\DetailPage.xaml.cs" line="65" column="20" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

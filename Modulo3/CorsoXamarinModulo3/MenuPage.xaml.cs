@@ -10,6 +10,14 @@ namespace CorsoXamarin
 	{
 		MenuPageViewModel _viewModel = null;
 
+		public event Action<int> ItemSelectedEvent;
+		private void notifyItemSelected(int idVoceMenuSelezionata)
+		{
+			if (ItemSelectedEvent != null) {
+				ItemSelectedEvent (idVoceMenuSelezionata);
+			}
+		}
+
 		public MenuPage ()
 		{
 			InitializeComponent ();
@@ -27,14 +35,24 @@ namespace CorsoXamarin
 
 			ListaVociMenu.SetBinding<MenuPageViewModel> (ListView.ItemsSourceProperty, c => c.Lista, BindingMode.OneWay);
 	
-			ListaVociMenu.ItemSelected += async (sender, e) => {
 
-				if (e.SelectedItem == null) return; 
 
-				var elementoSelezionato = (VoceDiMenu)e.SelectedItem;
+			ListaVociMenu.ItemTapped += async (sender, e) => {
 
+				if (e.Item == null) return; 
+
+				var elementoSelezionato = (VoceDiMenu)e.Item;
+
+				ListaVociMenu.SelectedItem = null;
+
+				/*
 				await DisplayAlert("selezione lista",
 					"hai selezionato la voce" + elementoSelezionato.IdVoceDiMenu, "OK");
+                   */
+
+
+
+				notifyItemSelected(elementoSelezionato.IdVoceDiMenu);
  
 			};
 		}
