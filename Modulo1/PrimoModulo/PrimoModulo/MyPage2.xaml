@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PrimoModulo.MyPage2">
 	<ContentPage.Content>
+<<<<<<< HEAD:Modulo1/PrimoModulo/PrimoModulo/MyPage2.xaml
 	 <Label Text="Prova"></Label>
+=======
+			<Label Text="Ciao"></Label>
+>>>>>>> fd0617a94152be3d7e339dacd99cc9a63df68dfa:Modulo1/PrimoModulo/PrimoModulo/LoginPage.xaml
 	</ContentPage.Content>
 </ContentPage>

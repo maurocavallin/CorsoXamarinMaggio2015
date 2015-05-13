@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CorsoXamarin.LoginPage">
+	<ContentPage.Content>
+
+	  <StackLayout Orientation="Vertical" Spacing="20" Padding="50,50,50,50">
+	       <Label x:Name="LabelUserName" Text="Username:"></Label>
+	       <Entry x:Name="EntryUserName"></Entry>
+
+	       <Label x:Name="LabelPassword" Text="Password:"></Label>
+
+	        <Entry x:Name="EntryUserPassword" IsPassword="true"></Entry>
+
+	        <Button x:Name="LoginButton" Text="Login" ></Button>
+	  </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
