@@ -27,19 +27,30 @@ namespace CorsoXamarin
 
 			ListaVociMenu.SetBinding<MenuPageViewModel> (ListView.ItemsSourceProperty, c => c.Lista, BindingMode.OneWay);
 	
+			ListaVociMenu.ItemSelected += async (sender, e) => {
 
+				if (e.SelectedItem == null) return; 
+
+				var elementoSelezionato = (VoceDiMenu)e.SelectedItem;
+
+				await DisplayAlert("selezione lista",
+					"hai selezionato la voce" + elementoSelezionato.IdVoceDiMenu, "OK");
+ 
+			};
 		}
+
+
 
 		protected override void OnAppearing ()
 		{
 			base.OnAppearing ();
 
-			List<MioOggetto> listaValori = new List<MioOggetto> () {
+			List<VoceDiMenu> listaValori = new List<VoceDiMenu> () {
 
-				new MioOggetto () { Titolo = "Ritolo", Descrizione = "descriz." },
-				new MioOggetto () { Titolo = "Ritolo", Descrizione = "descriz." },
-				new MioOggetto () { Titolo = "Ritolo", Descrizione = "descriz." },
-				new MioOggetto () { Titolo = "Ritolo", Descrizione = "descriz." },
+				new VoceDiMenu () { IdVoceDiMenu = 1, Titolo = "Sezione1", Descrizione = "Sezione1" },
+				new VoceDiMenu () { IdVoceDiMenu = 2, Titolo = "Sezione2", Descrizione = "Sezione2" },
+				new VoceDiMenu () { IdVoceDiMenu = 3, Titolo = "Sezione3", Descrizione = "Sezione3" },
+				new VoceDiMenu () { IdVoceDiMenu = 4, Titolo = "Sezione4", Descrizione = "Sezione4" },
 			};
 
 			_viewModel.Lista = listaValori;
@@ -48,8 +59,9 @@ namespace CorsoXamarin
 
 
 
-	public class MioOggetto
+	public class VoceDiMenu
 	{
+		public int IdVoceDiMenu { get; set;}
 		public string Titolo { get; set; }
 		public string Descrizione { get; set; }
 	}
@@ -58,11 +70,11 @@ namespace CorsoXamarin
 	{
 		public MenuPageViewModel ()
 		{
-			_lista = new List<MioOggetto> ();
+			_lista = new List<VoceDiMenu> ();
 		}
 
-		private List<MioOggetto> _lista;
-		public List<MioOggetto> Lista 
+		private List<VoceDiMenu> _lista;
+		public List<VoceDiMenu> Lista 
 		{ 
 			get
 			{ 
