@@ -9,7 +9,7 @@ namespace PrimoModulo
 		public App ()
 		{
 			// The root page of your application
-			MainPage = new LoginPage();
+			MainPage = new MyPage2();
 		}
 
 		protected override void OnStart ()

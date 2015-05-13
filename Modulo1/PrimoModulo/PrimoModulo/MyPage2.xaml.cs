@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace PrimoModulo
 {
-	public partial class LoginPage : ContentPage
+	public partial class MyPage2 : ContentPage
 	{
-		public LoginPage ()
+		public MyPage2 ()
 		{
 			InitializeComponent ();
 		}
