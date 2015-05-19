@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EsempioAccessoDatiLocali", "EsempioAccessoDatiLocali\EsempioAccessoDatiLocali.csproj", "{7EC56082-A772-4B7B-9A21-862BCF028CDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EsempioAccessoDatiLocali.Droid", "Droid\EsempioAccessoDatiLocali.Droid.csproj", "{4B7B08DA-D05F-4D5B-860B-645AC86B1E91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B7B08DA-D05F-4D5B-860B-645AC86B1E91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B7B08DA-D05F-4D5B-860B-645AC86B1E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B7B08DA-D05F-4D5B-860B-645AC86B1E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B7B08DA-D05F-4D5B-860B-645AC86B1E91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EC56082-A772-4B7B-9A21-862BCF028CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EC56082-A772-4B7B-9A21-862BCF028CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EC56082-A772-4B7B-9A21-862BCF028CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EC56082-A772-4B7B-9A21-862BCF028CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
