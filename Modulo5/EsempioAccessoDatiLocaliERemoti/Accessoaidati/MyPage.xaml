@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Accessoaidati.MyPage">
+	<ContentPage.Content
+			Title="Acceso ai dati locali" Padding="20, 20, 20, 20">
+
+			  <Grid ColumnSpacing="20" RowSpacing="20">
+			    <Grid.RowDefinitions>
+			      <RowDefinition Height="*" />
+			      <RowDefinition Height="*" />
+			      <RowDefinition Height="*" />
+			    </Grid.RowDefinitions>
+
+			    <Grid.ColumnDefinitions>
+			      <ColumnDefinition Width="*" />
+			      <ColumnDefinition Width="*" />
+			    </Grid.ColumnDefinitions>
+
+			    <Grid Grid.Row="0" Grid.Column="0" BackgroundColor="Aqua"><Button x:Name="PrimoPulsante" Text=""></Button></Grid>
+			    <Grid Grid.Row="0" Grid.Column="1" BackgroundColor="Olive"><Button x:Name="SecondoPulsante" Text=""></Button></Grid>
+
+			    <Grid Grid.Row="1" Grid.Column="0" BackgroundColor="Olive"><Button x:Name="TerzoPulsante" Text=""></Button></Grid>
+			    <Grid Grid.Row="1" Grid.Column="1" BackgroundColor="Aqua"><Button x:Name="QuartoPulsante" Text=""></Button></Grid>
+
+			    <Grid Grid.Row="2" Grid.Column="0" BackgroundColor="Aqua"></Grid>
+			    <Grid Grid.Row="2" Grid.Column="1" BackgroundColor="Olive"></Grid>
+
+			  </Grid>
+
+	</ContentPage.Content>
+</ContentPage>

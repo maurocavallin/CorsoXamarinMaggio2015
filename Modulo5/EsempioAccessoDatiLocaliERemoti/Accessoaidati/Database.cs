@@ -1,0 +1,78 @@
+﻿using System;
+using System.Linq;
+using SQLite;
+using Xamarin.Forms;
+using System.Collections.Generic;
+
+namespace Accessoaidati
+{
+	public class TodoItemDatabase 
+	{
+
+	static object locker = new object ();
+
+	SQLiteConnection database;
+
+	/// <summary>
+	/// Initializes a new instance of the <see cref="Tasky.DL.TaskDatabase"/> TaskDatabase. 
+	/// if the database doesn't exist, it will create the database and all the tables.
+	/// </summary>
+	/// <param name='path'>
+	/// Path.
+	/// </param>
+	public TodoItemDatabase()
+	{
+		var db = DependencyService.Get<ISQLite> ();
+
+		database = db.GetConnection ();
+		// create the tables
+		
+	}
+
+	public IEnumerable<TodoItem> GetItems ()
+	{
+		lock (locker) {
+			return (from i in database.Table<TodoItem>() select i).ToList();
+		}
+	}
+
+	public IEnumerable<TodoItem> GetItemsNotDone ()
+	{
+		lock (locker) {
+			return database.Query<TodoItem>("SELECT * FROM [TodoItem] WHERE [Done] = 0");
+		}
+	}
+
+	public TodoItem GetItem (int id) 
+	{
+		lock (locker) {
+			return database.Table<TodoItem>().FirstOrDefault(x => x.ID == id);
+		}
+	}
+
+		/// <summary>
+		/// Ritorna il numero di righe inserite
+		/// </summary> 
+	public int SaveItem (TodoItem item) 
+	{
+		lock (locker) {
+			if (item.ID != 0) {
+					
+				database.Update(item); 
+				return item.ID;
+
+			} else {
+			 	return  database.Insert(item);
+			}
+		}
+	}
+
+	public int DeleteItem(int id)
+	{
+		lock (locker) {
+			return database.Delete<TodoItem>(id);
+		}
+	}
+}
+}
+

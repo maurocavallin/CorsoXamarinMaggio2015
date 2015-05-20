@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Accessoaidati.PaginaListaDati">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical">
+			<SearchBar x:Name="Ricerca"></SearchBar>
+			<ActivityIndicator x:Name="Clessidra"></ActivityIndicator>
+			<ListView x:Name="MainListView">
+			</ListView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
